@@ -19,6 +19,7 @@ public abstract class TClasificador {
 
 
     public void quicksort(int[] datos) {
+
         quicksort(datos, 0, datos.length - 1);
     }
 
@@ -43,6 +44,10 @@ public abstract class TClasificador {
      * devuelve un valor del vector ubicado entre i <= x < j
      */
     protected abstract int obtenerPivote(int[] datos, int i, int j);
+
+    /**
+     * método auxiliar y utilizado en quicksort
+     */;
 
     /**
      * método auxiliar y utilizado en quicksort
