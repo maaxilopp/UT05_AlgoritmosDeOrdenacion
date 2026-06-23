@@ -13,7 +13,13 @@ public class Clasificador extends TClasificador{
 
     @Override
     void burbuja(int[] datos) {
-
+        for (int i=1; N-1){
+            for (int j=N; i+1){
+                if (datos[j] < datos[j-1]) {
+                    intercambiar(datos[j], datos[j-1])
+                }
+            }
+        }
     }
 
     /**
