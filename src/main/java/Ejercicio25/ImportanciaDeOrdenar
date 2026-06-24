@@ -1,0 +1,38 @@
+¿Porque la ordenación es fundamental en ciencias de la computación?
+
+La ordenación es considerada un problema fundamental porque transforma
+datos desordenados en una estructura predecible que habilita algoritmos
+mucho más eficientes. Una colección ordenada permite explotar el orden
+para buscar, comparar y agrupar elementos en tiempos drásticamente menores.
+
+En adición, la ordenación es un problema con límites teóricos muy bien definidos.
+Está demostrado que cualquier algoritmo que ordene comparando elementos entre sí
+necesita, como mínimo, una cantidad de comparaciones del orden de O(n log n)
+(siendo n el número total de elementos que se almacenan). En otras palabras,
+no existe ningún método que pueda ordenar por comparación con menos trabajo que ese.
+Justamente por estar tan bien estudiada, la ordenación se utiliza como caso de referencia
+para enseñar y comparar conceptos ya trabajados a lo largo del curso, como el costo de los
+algoritmos, el diseño de estructuras de datos y estrategias de resolución como "divide y vencerás".
+
+A continuación, enumeraremos algunas de las multiples aplicaciones donde ordenar es útil antes de
+resolver otro problema.
+
+1.Búsqueda eficiente: Mantener los datos ordenados es lo que permite estructurar la información en
+  un árbol binario de búsqueda, donde cada nodo cumple que las claves menores están a su izquierda
+  y las mayores a su derecha. Gracias a ese orden, la búsqueda no recorre todos los elementos,
+  sino que en cada paso descarta una mitad del árbol, logrando un costo proporcional a la altura.
+  El problema es que un ABB puede degenerar (por ejemplo, si los datos se insertan ya ordenados)
+  y volverse una lista con búsqueda O(n). Para evitarlo se usan los AVL, que mantienen la altura
+  acotada en O(log n) reajustándose con rotaciones tras cada inserción o eliminación. De esta forma,
+  el hecho de respetar un orden entre las claves es lo que garantiza que la búsqueda se mantenga eficiente
+  en O(log n).
+
+2.Eliminación de duplicados: Al ordenar la colección, todos los elementos repetidos quedan juntos, uno al lado
+  del otro. Entonces, para encontrar o eliminar duplicados, alcanza con recorrer la lista una sola vez y comparar
+  cada elemento con el siguiente. Sin ordenar, habría que comparar cada elemento con todos los demás, lo que es
+  mucho más lento.
+
+3. Algoritmo de Kruskal: El algoritmo de Kruskal se usa para encontrar el arbol abarcador de costo minimo; su primer paso,
+   es ordenar todas las aristas según su peso, para luego recorrerlas de menor a mayor e ir agregando las que no formen ciclos.
+   Ese orden inicial es lo que garantiza que la solución construida sea la de costo mínimo. Sin ordenar las aristas, el algoritmo 
+   no podría asegurar un resultado óptimo.
