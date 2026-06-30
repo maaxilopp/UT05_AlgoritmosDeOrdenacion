@@ -1,0 +1,40 @@
+Datos iniciales:
+2 - 5 - 3 - 0 - 2 - 3 - 0 - 3
+
+Tabla de conteo inicial:
+Valor:      0   1   2   3   4   5
+Conteo:     2   0   2   3   0   1
+
+Tabla acumulada:
+Valor:      0   1   2   3   4   5
+Acumulada:  2   2   4   7   7   8
+
+Construcción del vector ordenado
+(se recorre el vector de derecha a izquierda)
+
+Elemento 3 → posición 7 (acumulada de 3 pasa de 7 a 6)
+_ _ _ _ _ _ 3 _
+
+Elemento 0 → posición 2 (acumulada de 0 pasa de 2 a 1)
+_ 0 _ _ _ _ 3 _
+
+Elemento 3 → posición 6 (acumulada de 3 pasa de 6 a 5)
+_ 0 _ _ _ 3 3 _
+
+Elemento 2 → posición 4 (acumulada de 2 pasa de 4 a 3)
+_ 0 _ 2 _ 3 3 _
+
+Elemento 0 → posición 1 (acumulada de 0 pasa de 1 a 0)
+0 0 _ 2 _ 3 3 _
+
+Elemento 3 → posición 5 (acumulada de 3 pasa de 5 a 4)
+0 0 _ 2 3 3 3 _
+
+Elemento 5 → posición 8 (acumulada de 5 pasa de 8 a 7)
+0 0 _ 2 3 3 3 5
+
+Elemento 2 → posición 3 (acumulada de 2 pasa de 3 a 2)
+0 0 2 2 3 3 3 5
+
+Vector ordenado final:
+0 - 0 - 2 - 2 - 3 - 3 - 3 - 5

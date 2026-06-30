@@ -1,0 +1,29 @@
+EJERCICIO 15 - SELECCIÓN DIRECTA
+
+Datos iniciales:
+223 - 784 - 376 - 285 - 015 - 440 - 666 - 007
+
+Iteración 1 (buscar mínimo desde posición 0):
+007 - 784 - 376 - 285 - 015 - 440 - 666 - 223
+
+Iteración 2 (buscar mínimo desde posición 1):
+007 - 015 - 376 - 285 - 784 - 440 - 666 - 223
+
+Iteración 3 (buscar mínimo desde posición 2):
+007 - 015 - 223 - 285 - 784 - 440 - 666 - 376
+
+Iteración 4 (buscar mínimo desde posición 3):
+007 - 015 - 223 - 285 - 784 - 440 - 666 - 376
+
+Iteración 5 (buscar mínimo desde posición 4):
+007 - 015 - 223 - 285 - 376 - 440 - 666 - 784
+
+Iteración 6 (buscar mínimo desde posición 5):
+007 - 015 - 223 - 285 - 376 - 440 - 666 - 784
+
+Iteración 7 (buscar mínimo desde posición 6):
+007 - 015 - 223 - 285 - 376 - 440 - 666 - 784
+
+Vector ordenado final:
+
+007 - 015 - 223 - 285 - 376 - 440 - 666 - 784
