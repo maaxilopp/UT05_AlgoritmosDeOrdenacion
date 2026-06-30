@@ -6,7 +6,7 @@ Datos iniciales:
 Convencion de conteo:
   C = +1 cada vez que se compara con un elemento
   M = +1 cada vez que se mueve un elemento
-........................................................................
+
 Iteracion 1 (insertar 458):  C=1  M=0
   256 - 458 - 365 - 298 - 043 - 648 - 778 - 621 - 655 - 019 - 124 - 847
 
@@ -39,7 +39,6 @@ Iteracion 10 (insertar 124):  C=9  M=8
 
 Iteracion 11 (insertar 847):  C=1  M=0
   019 - 043 - 124 - 256 - 298 - 365 - 458 - 621 - 648 - 655 - 778 - 847
-..........................................................................
 
 TOTAL Comparaciones = 36
 TOTAL Movimientos = 27
