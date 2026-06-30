@@ -1,0 +1,47 @@
+EJERCICIO 9 - SHELLSORT
+Conjunto de datos inicial (12 elementos, indices 0..11):
+
+indice:  0    1    2    3    4    5    6    7    8    9   10   11
+        256  458  365  298  043  648  778  621  655  019  124  847
+
+
+INCREMENTO = 4
+Se comparan los elementos separados de a 4 posiciones.
+Se forman 4 subgrupos:
+
+  Grupo A (indices 0,4,8) : 256, 043, 655   ordenado: 043, 256, 655
+  Grupo B (indices 1,5,9) : 458, 648, 019   ordenado: 019, 458, 648
+  Grupo C (indices 2,6,10): 365, 778, 124   ordenado: 124, 365, 778
+  Grupo D (indices 3,7,11): 298, 621, 847   ordenado: 298, 621, 847
+
+Resultado:
+
+ indice:  0    1    2    3    4    5    6    7    8    9   10   11
+        043  019  124  298  256  458  365  621  655  648  778  847
+
+INCREMENTO H = 2
+Se comparan los elementos separados de a 2 posiciones.
+Se forman 2 subgrupos:
+
+  Grupo Par   (indices 0,2,4,6,8,10) : 043,124,256,365,655,778  ya ordenado
+  Grupo Impar (indices 1,3,5,7,9,11) : 019,298,458,621,648,847  ya ordenado
+
+Resultado(no hay cambios):
+
+ indice:  0    1    2    3    4    5    6    7    8    9   10   11
+        043  019  124  298  256  458  365  621  655  648  778  847
+
+INCREMENTO H = 1  (insercion clasica)
+
+Se ordena el arreglo completo con insercion simple.
+Como ya esta casi ordenado, solo se reacomodan los pocos
+elementos fuera de lugar.
+
+Resultado:
+
+  indice:  0    1    2    3    4    5    6    7    8    9   10   11
+        019  043  124  256  298  365  458  621  648  655  778  847
+
+RESULTADO FINAL
+
+  019 - 043 - 124 - 256 - 298 - 365 - 458 - 621 - 648 - 655 - 778 - 847
