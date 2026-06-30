@@ -1,0 +1,22 @@
+a) Inserción directa: En vectores pequeños y casi ordenados se aproxima a O(n)
+                      hace pocos desplazamientos cuando los elementos ya están
+                      en su sitio.
+
+b) Quicksort: Para un millón de elementos se necesita O(n log n). Quicksort suele
+              ser el más rápido en la práctica; si importa garantizar O(n log n)
+              en el peor caso o estabilidad, Mergesort.
+
+c) Counting sort: Con claves enteras en un rango pequeño y conocido ordena en O(n+k)
+                  sin comparaciones, simplemente contando ocurrencias.
+
+d) d) Counting sort: Radix sort o Inserción directa, según las características de los
+                     datos. El requisito central del enunciado es la estabilidad, cuando
+                     hay muchas claves repetidas y "importa mantener el orden original",
+                     el algoritmo elegido debe garantizar que dos elementos con la misma
+                     clave conserven el orden en que venían en el arreglo. Eso descarta de
+                     entrada a Quicksort, Heapsort, Shellsort y Selección directa, que no
+                     son estables y reordenarían las repeticiones de forma impredecible.
+
+e) Shell sort: Trabaja con saltos decrecientes para reducir desplazamientos, es sencillo de
+               implementar y mejora claramente el rendimiento sin recurrir a algoritmos
+               complejos.
