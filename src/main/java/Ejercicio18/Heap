@@ -1,0 +1,48 @@
+Datos iniciales:
+  22 - 11 - 44 - 55 - 88 - 77 - 33 - 01
+
+Construccion del min-heap:
+
+Paso 1 (nodo 3):
+  22 - 11 - 44 - 01 - 88 - 77 - 33 - 55
+
+Paso 2 (nodo 2):
+  22 - 11 - 33 - 01 - 88 - 77 - 44 - 55
+
+Paso 3 (nodo 1):
+  22 - 01 - 33 - 11 - 88 - 77 - 44 - 55
+
+Paso 4 (nodo 0):
+  01 - 11 - 33 - 22 - 88 - 77 - 44 - 55
+
+Min-heap obtenido:
+  01 - 11 - 33 - 22 - 88 - 77 - 44 - 55
+
+
+HEAPSORT:
+
+Iteración 1 (extraer 01):
+  11 - 22 - 33 - 55 - 88 - 77 - 44 - 01
+
+Iteración 2 (extraer 11):
+  22 - 44 - 33 - 55 - 88 - 77 - 11 - 01
+
+Iteración 3 (extraer 22):
+  33 - 44 - 77 - 55 - 88 - 22 - 11 - 01
+
+Iteración 4 (extraer 33):
+  44 - 55 - 77 - 88 - 33 - 22 - 11 - 01
+
+Iteración 5 (extraer 44):
+  55 - 88 - 77 - 44 - 33 - 22 - 11 - 01
+
+Iteración 6 (extraer 55):
+  77 - 88 - 55 - 44 - 33 - 22 - 11 - 01
+
+Iteración 7 (extraer 77):
+  88 - 77 - 55 - 44 - 33 - 22 - 11 - 01
+
+
+VECTOR ORDENADO FINAL (descendente)
+
+88 - 77 - 55 - 44 - 33 - 22 - 11 - 01
