@@ -9,7 +9,7 @@ b) Quicksort: Para un millón de elementos se necesita O(n log n). Quicksort sue
 c) Counting sort: Con claves enteras en un rango pequeño y conocido ordena en O(n+k)
                   sin comparaciones, simplemente contando ocurrencias.
 
-d)Counting sort:     Radix sort o Inserción directa, según las características de los
+d)Counting sort, Radix sort o Inserción directa:Según las características de los
                      datos. El requisito central del enunciado es la estabilidad, cuando
                      hay muchas claves repetidas y "importa mantener el orden original",
                      el algoritmo elegido debe garantizar que dos elementos con la misma
